@@ -1,0 +1,255 @@
+\documentclass[9pt,a4paper,twocolumn]{article}
+\usepackage{hlpl}
+
+\definecolor{squaregrey}{HTML}{D1D5DB}   
+\cftpagenumbersoff{section}
+\cftpagenumbersoff{subsection}
+\cftpagenumbersoff{subsubsection}
+% HLPL TEMPLATE — v1.0, filled example (3 pages)
+% Replace every placeholder with your own content.
+% Logo = hlpl-logo.png in SAME folder. Use \hlplmaketitle. Compile twice.
+\journalvolume{Vol.~1}
+\journalissue{No.~1}
+\journalyear{2026}
+\articledoi{10.5281/zenodo.1234567}
+\title{Your Article Title Here \\ \vspace{1mm} \bfseries\large\mdseries\color{subtitlegrey} Optional Subtitle: One Line Only}
+\author{First Author\textsuperscript{\textdagger} \orcidlink{0000-0002-4861-5464}, Second Author \orcidlink{0000-0002-4861-5464}, and Third Author \orcidlink{0000-0002-4861-5464}   \vspace{0.27mm}
+\hypertarget{phdref2}{} \hypertarget{phdref4}{}
+\\
+\textsuperscript{\textdagger}\hyperlink{phdref}{ \small\color{subtitlegrey}\footnotesize\textit{Degree, Institution}\tiny\textsuperscript{\ast}} \vspace{0.27mm} \\
+\textsuperscript{\textdagger}\footnotesize\textcolor{subtitlegrey}{
+\href{mailto:email@site.com}{\nolinkurl{email@site.com}}  | 
+\href{https://github.com/hlpl}{repository.com/code}\scriptsize\textsuperscript{\hyperlink{phdref3}{$\ast\ast$}}}
+\vspace{0.27mm} \\
+}
+\date{%
+  \makebox[\linewidth][s]{%
+    \scriptsize\textit{Month DD, YYYY}%
+    \hfill%
+    \scriptsize\color{subtitlegrey}%
+    {\color{gray!50}\aiZenodo}\hspace{0.3em}\href{https://doi.org/10.5281/zenodo.24136657}{10.5281/zenodo.24136657}%
+  }%
+}
+\begin{document}
+\twocolumn[
+\begin{@twocolumnfalse}
+\hlplmaketitle
+\vspace{5mm}
+\noindent\colorbox{lightbg}{\parbox{\dimexpr\textwidth-2\fboxsep}{%
+\small\textcolor{primary}{\justifying Write 150--250 words. State the question, the method, the result, and why it matters --- in that order. Do not cite, do not define new symbols, do not promise what the paper does not deliver. Example: \textit{We ask whether [question]. We show that [method] gives [result]. This implies [consequence] for [field].} Replace this whole paragraph with your abstract.}\par
+\vspace{2mm}
+\footnotesize\textit{{Keywords: \textcolor{darkgray}{ Keyword 1 $\cdot$ Keyword 2 $\cdot$ Keyword 3 $\cdot$ Keyword 4}}}
+}}
+\vspace{4mm}
+\end{@twocolumnfalse}
+]
+
+\setcounter{tocdepth}{2}
+\begin{center}
+\begingroup
+\hypersetup{hidelinks}
+\begin{footnotesize}
+\setlength{\cftbeforesecskip}{2pt}
+\setlength{\cftbeforesubsecskip}{0pt}
+\setlength{\cftparskip}{0pt}
+\setlength{\cftsecindent}{0pt}
+\setlength{\cftsubsecindent}{2.2em}
+\renewcommand{\cftsecfont}{\footnotesize\normalfont\color[HTML]{2C3E50}}
+\renewcommand{\cftsecpagefont}{\scriptsize\normalfont\color[HTML]{2C3E50}}
+\renewcommand{\cftsubsecfont}{\scriptsize\normalfont\color{darkgray}}
+\renewcommand{\cftsubsecpagefont}{\scriptsize\normalfont\color{darkgray}}
+\tableofcontents
+\end{footnotesize}
+\endgroup
+\end{center}
+\vspace{-4mm}
+\textcolor{gray!30}{\rule{0.48\textwidth}{0.3pt}}\par
+\vspace{-2mm}
+       
+
+\section{Introduction}
+Start with the problem, not with the history of the field\citep{heneka2026, hell2026, papageorgakis2025}. One paragraph: what is unknown? One paragraph: why does it matter? One paragraph: what do you do about it?
+
+This template shows the format of every article in \textit{Human Life Programming Language} (HLPL)\citep{altheisen2025}. It is also a short guide to the journal's scope and format, so that authors can see both at once: the layout on this page, and the rules in Sections~\ref{sec:scope}--\ref{sec:format}.
+
+HLPL is an overlay journal for the Physics of Meaning. It publishes work that treats meaning, language, cognition, and life as physical phenomena: measurable, modellable, and testable\citep{wang2023,douglas2023}. A paper in HLPL must do more than argue. It must define its terms, state a claim that could be wrong, and show evidence, a model, or a proof that bears on that claim.
+
+\subsection{How to use this template}
+Delete the bracketed placeholders and the filler paragraphs, keep the commands\citep{zahavy2026, techrxiv2025}. Do not change the margins, the fonts, the column layout, or the title block. If you add a package, add it after \verb|\usepackage{hlpl}| and check that the document still compiles twice with no warnings about overfull boxes.
+
+\subsection{What a good first paragraph does}
+A good first paragraph names the phenomenon, the gap, and the contribution, in that order. Compare: ``Language is important'' (no gap, no contribution) with ``Dependency length in 37 languages is shorter than chance, but no variational principle predicts by how much. We derive that bound from least action and test it.'' The second sentence can be checked. Aim for sentences that can be checked.
+
+\section{Journal Scope}
+\label{sec:scope}
+\subsection{What HLPL publishes}
+HLPL publishes research on meaning as a physical process. Topics include, but are not limited to:
+\begin{tcolorbox}[
+    colback=white,
+    colframe=white,
+    arc=4pt,
+    boxrule=0mm,
+    left=15pt, right=15pt, top=0pt, bottom=0pt
+]
+\begin{itemize}[label=\textcolor{squaregrey}{\tiny$\blacksquare$}, leftmargin=*]
+    \item Gravitational physics, encompassing general relativity, alternative theories of gravity, and loop quantum gravity;
+    \item The physics of meaning, information, and cognition;
+    \item Language as a physical system: production, structure, change, and cost;
+    \item Brain-time, neuro-time, and word-time; time, order, and memory in living systems;
+    \item Variational principles, least action, and geodesics in cognitive and linguistic systems;
+    \item Quantitative, computational, and formal models of language and mind, tested against data;
+    \item The interface of physics, linguistics, neuroscience, and the study of life.
+\end{itemize}
+\end{tcolorbox}
+
+A paper may be theoretical, experimental, computational, or a synthesis, provided it is precise about its claims and its evidence.
+
+\subsection{What HLPL does not publish}
+HLPL does not publish purely speculative essays, summaries without a new claim, or work that uses physics terms as metaphors without a model. ``The brain is like a quantum computer'' is not a result. ``Under assumptions A--C, the model predicts X; in corpus Y we measure X $\pm$ error'' is a result, even if the result is negative. Negative results, replications, and corrections are welcome when they are precise.
+
+\subsection{Article types}
+Table~\ref{tab:types} lists the article types. If you are unsure which type fits your paper, choose the closest one and say so in your cover note. The editors may reclassify a paper during review; reclassification is not a rejection.
+
+
+\begin{table}[h]
+\centering
+\caption{Article types in HLPL. Lengths are guidelines, excluding references.}
+\label{tab:types}
+\footnotesize
+\arrayrulecolor{black!40} % 2. Set the line color to grey (applies to top, mid, and bottom rules)
+\begin{tabular}{@{}p{20mm}p{28mm}p{28mm}@{}}
+\toprule
+\textbf{Type} & \textbf{Typical length} & \textbf{Peer review} \\
+\midrule
+Research Article & 4,000--8,000 words & Single-blind, 2+ reviewers \\
+Short Communication & 1,500--3,000 words & Single-blind, 1+ reviewer \\
+Review / Synthesis & 6,000--10,000 words & Single-blind, 2+ reviewers \\
+Comment / Reply & 800--2,000 words & Editorial + 1 reviewer \\
+Methods / Code Note & 1,500--4,000 words & Single-blind, 1+ reviewer \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Journal Format}
+\label{sec:format}
+\subsection{Manuscript structure}
+Use this order: title, authors, affiliations, abstract, keywords, introduction, main sections, discussion or conclusion, acknowledgments, data and code availability, references. Put long derivations, extra tables, and code listings in an appendix after the references, not in footnotes. Number sections as in this template: \verb|\section|, \verb|\subsection|, \verb|\subsubsection|.
+
+\subsection{Length, language, and files}
+Write in clear English. Define every abbreviation at first use. Submit one \verb|.tex| file (this template), the \verb|hlpl.sty| file, and every figure as a separate PDF or PNG file. Name figures \verb|fig1.pdf|, \verb|fig2.pdf|, and so on. Do not paste figures into the text as screenshots of text: a figure must stay readable when printed in black and white and when enlarged to 200\%.
+
+\subsection{Figures}
+Figure~\ref{fig:example} is a placeholder figure. Replace it with your own figure, keep the caption below the figure, and refer to every figure in the text before it appears. A caption must let the reader understand the figure without reading the paper: state what is plotted, what the axes are, and what the reader should notice.
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=0.9, every node/.style={font=\small}]
+  \draw[thick, ->] (0,0) -- (4.2,0) node[right] {$x: t_L$};
+  \draw[thick, ->] (0,0) -- (0,3.0) node[above] {$y: t_B$};
+  \draw[thick, color=hlplblue] (0,0) .. controls (1.5,2.2) and (2.8,0.6) .. (4,2.4);
+  \node[color=hlplblue] at (2.0,2.0) {$\mathcal{M}_{BT}$};
+  \node at (3.2,0.35) {$\varphi_L$};
+  \node at (0.55,1.8) {$\varphi_B$};
+  \fill (1.2,1.1) circle (1.5pt) node[right] {-a};
+  \fill (2.9,1.4) circle (1.5pt) node[right] {-b};
+\end{tikzpicture}
+\caption{Replace this drawing with your own figure. Caption: what is shown, what the axes mean, and what the reader should notice.}
+\label{fig:example}
+\end{figure}
+
+
+\subsection{Equations}
+Number every equation you refer to. Define every symbol. Equation~\eqref{eq:action} is a placeholder: replace it with your own central equation, and then explain it in words directly below it. An equation without a sentence explaining it does not count as an explanation.
+
+\begin{equation}
+\label{eq:action}
+S_{\mathrm{cog}}[t] = \int_{t_0}^{t_1} L_{\mathrm{cog}}\big(q(t), \dot{q}(t), t\big)\, dt,
+\qquad \delta S_{\mathrm{cog}} = 0
+\end{equation}
+where $[q(t)]$ is [your variable], $[L_{\mathrm{cog}}]$ is [your Lagrangian or cost], and $[t]$ is [your time variable]. The condition $\delta S_{\mathrm{cog}} = 0$ means [state in one sentence what your model predicts]. If your paper has no equation, delete this subsection and say so in your cover note; a paper is not required to have equations, but it is required to have checkable claims.
+
+\subsection{Tables}
+Table~\ref{tab:example} is a placeholder table. Put the caption above the table, use \verb|booktabs| rules (\verb|\toprule|, \verb|\midrule|, \verb|\bottomrule|), and do not use vertical lines. Every number in a table must also be explained in the text or in the table note. If a reader cannot tell what a column means, the table is not finished.
+
+\begin{table}[h]
+\centering
+\caption{Replace the numbers with your own results.}
+\label{tab:example}
+\small
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{{Dataset}} & \textbf{{$n$}} & \textbf{{Measure}} & \textbf{{Result}} \\
+\midrule
+{Corpus A} & {986} & {mean} & {0.42 $\pm$ 0.03} \\
+{Corpus B} & {37} & {mean} & {0.38 $\pm$ 0.05} \\
+{Control}  & {37} & {mean} & {0.51 $\pm$ 0.04} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Citations and references} 
+Cite with \verb|\citep{heneka2026,hell2026}| for parenthetical citations and \verb|\citet{heneka2026}| for narrative citations. Example: dependency length minimization is well documented \citep{papageorgakis2025}, and \citet{heneka2026} report the lexical pattern. List every cited work in the References, and cite every listed work in the text. Use DOIs where available. Do not cite work you have not read.
+
+\subsection{Data, code, and reproducibility}
+State where the data and code are. The minimum is a link to a public repository (Zenodo, GitHub, or equivalent) plus the version or commit used. If data cannot be shared, say why, in one sentence. HLPL is an overlay journal archived on Zenodo: each article receives a DOI, and the published version is the version of record.
+
+\section{Discussion}
+What did you find? What does it rule out? What is still unknown? Do not repeat the results; interpret them. Name the strongest objection to your claim and answer it. If you cannot answer it, say so: a stated limitation is stronger than a hidden one.
+
+Replace this paragraph with your own text. Keep one idea per paragraph, define every symbol before you use it, and give the reader a reason to read the next paragraph. If a sentence does not change what the reader believes, delete it. Placeholder text is here only to show the layout, the line spacing, and the length of a typical page in this two-column format. Do not submit placeholder text.
+
+
+
+\section{Conclusion}
+One paragraph: the claim, the evidence, the consequence. A reader who reads only the abstract and the conclusion should know what you showed and why it matters.
+
+\section*{Acknowledgments}
+Funding, help, and tools. Example: ``Independent research, no external funding. The author thanks [names] for [specific help]. AI tools were used for [editing / coding / literature search] and the author checked all outputs.''
+
+
+\begin{strip}
+
+\hypertarget{phdref}{} 
+\scriptsize\textcolor{gray!30}{\rule{1\textwidth}{0.3pt}}\par \vspace{-1mm}
+\vspace{2mm} 
+\hypertarget{phdref3}{} 
+\par\noindent\hangindent=2.5em \hangafter=1
+\hyperlink{phdref2}{\notemarker{$\ast$}}\hspace{1.1em}\href{https://www.stanford.edu/}{Institution Name}, Street, State Zip, Country \vspace{1mm} 
+\par\noindent\hangindent=2.5em \hangafter=1
+\hyperlink{phdref4}{\notemarker{$\ast\ast$}}\hspace{1.1em}Codes on \href{https://github.com/hlpl}{Source Code Site} are also distributed on \href{https://github.com/hlpl}{Site 2} and \href{https://github.com/hlpl}{Site 3}.
+
+\begin{footnotesize}
+\linespread{0.8}\selectfont
+\begin{thebibliography}{99}
+\setlength{\itemsep}{3pt}
+\setlength{\parsep}{1pt} 
+
+\bibitem[Heneka et al.(2026)]{heneka2026}
+Heneka, C., Nieser, F., Ore, A., Plehn, T., \& Schiller, D. (2026). Large Language Models -- the Future of Fundamental Physics? \textit{SciPost Physics}, 20(3), 070. DOI: \href{https://doi.org/10.21468/SciPostPhys.20.3.070}{10.21468/SciPostPhys.20.3.070}
+
+\bibitem[Hell \& Thiele(2026)]{hell2026}
+Hell, A., \& Thiele, L. (2026). LLMs with in-context learning for Algorithmic Theoretical Physics. \textit{arXiv preprint}. DOI: \href{https://doi.org/10.48550/arXiv.2605.08212}{10.48550/arXiv.2605.08212}
+
+\bibitem[Papageorgakis et al.(2025)]{papageorgakis2025}
+Papageorgakis, C., Richmond, P., Niarchos, C., Rai, B., \& Sharma, P. (2025). FeynTune: Large Language Models for High-Energy Theory. \textit{Machine Learning: Science and Technology}. DOI: \href{https://doi.org}{10.400924072/FeynTune}
+
+\bibitem[Altheisen et al.(2025)]{altheisen2025}
+Altheisen, J., et al. (2025). Large Physics Models: Towards a collaborative approach with Large Language Models and Foundation Models. \textit{The European Physical Journal C}, 85, 1066. DOI: \href{https://doi.org/10.1140/epjc/s10052-025-14707-8}{10.1140/epjc/s10052-025-14707-8}
+
+\bibitem[Wang et al.(2023)]{wang2023}
+Wang, Y. R., Duan, J., Fox, D., \& Srinivasa, S. (2023). NEWTON: Are Large Language Models Capable of Physical Reasoning? \textit{arXiv preprint}. DOI: \href{https://doi.org}{10.48550/arXiv.2310.07018}
+
+\bibitem[Douglas(2023)]{douglas2023}
+Douglas, M. R. (2023). Large Language Models. \textit{arXiv preprint}. DOI: \href{https://doi.org/10.48550/arXiv.2307.05782}{10.48550/arXiv.2307.05782}
+
+\bibitem[Zahavy(2026)]{zahavy2026}
+Zahavy, T. (2026). Position: LLMs can't jump (Using General Relativity as a Case Study). \textit{International Conference on Machine Learning (ICML)}. OpenReview ID: klU4737opt. 
+
+\bibitem[TechRxiv(2025)]{techrxiv2025}
+Anonymous. (2025). The Role of Special and General Theory of Relativity in Large Language Model Inference. \textit{TechRxiv preprint}. DOI: \href{https://doi.org}{10.36227/techrxiv.175000907.78277605}
+
+
+\end{thebibliography}
+\end{footnotesize}
+\end{strip}
+\end{document}
